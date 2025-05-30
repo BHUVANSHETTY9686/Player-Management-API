@@ -3,7 +3,7 @@ services:
     name: player-management-api
     runtime: docker
     plan: free
-    repo: https://github.com/yourusername/PlayerManagementAPI
+    repo: https://github.com/BHUVANSHETTY9686/Player-Management-API
     region: oregon
     buildCommand: docker build -t player-management-api .
     startCommand: docker run -p $PORT:80 player-management-api
@@ -11,4 +11,4 @@ services:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
       - key: ConnectionStrings__DefaultConnection
-        value: Data Source=PlayerManagement.db
+        value: Data Source=/data/PlayerManagement.db
