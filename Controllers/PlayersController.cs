@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PlayerManagementAPI.Data;
 using PlayerManagementAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PlayerManagementAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]  // Require authentication for all actions
     public class PlayersController : ControllerBase
     {
         private readonly PlayerDbContext _context;

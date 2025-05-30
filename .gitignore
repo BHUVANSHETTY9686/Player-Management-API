@@ -1,0 +1,12 @@
+## .NET Core
+bin/
+obj/
+*.dll
+*.pdb
+*.user
+*.cache
+
+## SQLite database files
+*.db
+*.db-shm
+*.db-wal

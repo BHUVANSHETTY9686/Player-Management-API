@@ -1,6 +1,36 @@
-@PlayerManagementAPI_HostAddress = http://localhost:5231
+@PlayerManagementAPI_HostAddress = https://player-management-api.onrender.com
 
-GET {{PlayerManagementAPI_HostAddress}}/weatherforecast/
+### Get all players
+GET {{PlayerManagementAPI_HostAddress}}/api/players
 Accept: application/json
 
+### Get a specific player
+GET {{PlayerManagementAPI_HostAddress}}/api/players/1
+Accept: application/json
+
+### Create a new player
+POST {{PlayerManagementAPI_HostAddress}}/api/players
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "position": "Forward",
+    "jerseyNumber": 10,
+    "team": "All Stars"
+}
+
+### Update a player
+PUT {{PlayerManagementAPI_HostAddress}}/api/players/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "John Doe Updated",
+    "position": "Midfielder",
+    "jerseyNumber": 11,
+    "team": "All Stars United"
+}
+
+### Delete a player
+DELETE {{PlayerManagementAPI_HostAddress}}/api/players/1
 ###

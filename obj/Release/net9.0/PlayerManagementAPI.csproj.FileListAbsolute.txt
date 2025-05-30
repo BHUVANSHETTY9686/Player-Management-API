@@ -155,3 +155,4 @@
 /Volumes/Workspace/API/PlayerManagementAPI/obj/Release/net9.0/PlayerManagementAPI.pdb
 /Volumes/Workspace/API/PlayerManagementAPI/obj/Release/net9.0/PlayerManagementAPI.genruntimeconfig.cache
 /Volumes/Workspace/API/PlayerManagementAPI/obj/Release/net9.0/ref/PlayerManagementAPI.dll
+/Volumes/Workspace/API/PlayerManagementAPI/obj/Release/net9.0/PlayerManagementAPI.sourcelink.json
