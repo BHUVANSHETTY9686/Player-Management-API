@@ -87,12 +87,18 @@ using (var scope = app.Services.CreateScope())
 app.UseSwagger();
 app.UseSwaggerUI();
 
+// Enable serving static files - make sure this comes before routing
+app.UseStaticFiles();
+app.UseDefaultFiles();
+app.UseRouting();
+
 // In production, we're already behind HTTPS proxy
 if (!app.Environment.IsProduction())
 {
     app.UseHttpsRedirection();
 }
 
+app.UseAuthentication(); // Add this line before UseAuthorization
 app.UseAuthorization();
 
 // Enable CORS
