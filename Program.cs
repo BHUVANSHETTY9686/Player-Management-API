@@ -88,8 +88,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 // Enable serving static files - make sure this comes before routing
-app.UseStaticFiles();
 app.UseDefaultFiles();
+app.UseStaticFiles();
 app.UseRouting();
 
 // In production, we're already behind HTTPS proxy
