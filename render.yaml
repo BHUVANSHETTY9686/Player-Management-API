@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: player-management-api
+    env: docker
+    plan: free
+    buildCommand: docker build -t player-management-api .
+    startCommand: docker run -p $PORT:80 -e PORT=$PORT player-management-api
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
